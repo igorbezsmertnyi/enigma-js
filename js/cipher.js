@@ -44,6 +44,7 @@ const getKeyCode = () => {
 
 //fuction to clear textarea
 const clean = () => {
+  let TxArea = document.getElementById('shiprograms')
   TxArea.value = ''
   TxArea.value = 'Shirograms: '
 }
@@ -59,7 +60,7 @@ const colorSVG = () => {
 const form_encrypt = (event) => {
   if(event.keyCode >= 65 && event.keyCode <= 90) {          //selectiong of values more than 65 and less thsn 90
                                                             //These values correspond to the letters on keyboard
-                                                            
+
     TxEncrypt = arr_alp[(event.keyCode % 65)]               //selecting value from alphabet array by keyCode
     TxKey1 = document.getElementById('Key1').value
     TxKey2 = document.getElementById('Key2').value
