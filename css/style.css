@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #ECECEC;
+}
+
+#page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+select {
+    margin: 0 38px;
+    padding-left: 4px;
+    width: 22px;
+    height: 22px;
+    border: 3px solid;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+}
+
+#Layer_1 {
+    position: absolute;
+    height: 700px;
+    width: 1280px;
+}
+
+#mashinecount {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.headcounter {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-light {
+    width: 100%;
+    padding: 7.5px 0;
+    background-color: #C0BEBB;
+    z-index: 0;
+    box-shadow: 6px 5px 20px -11px rgba(0, 0, 0, 0.75);
+}
+
+.line-dark {
+    position: relative;
+    height: 25px;
+    background-color: darkgray;
+    z-index: 0;
+}
+
+.header {
+    position: absolute;
+    background: url(images/logo.svg) no-repeat center;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+}
+
+.answearcont {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.answear {
+    width: 420px;
+}
+
+#keyCode {
+    width: 100px;
+}
+
+#shiprograms {
+    position: relative;
+    width: 100%;
+    height: 132px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+.answear p {
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+}
+
+#buttClean {
+    position: relative;
+    width: 100%;
+}
+
+#buttClean input {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    min-width: inherit;
+}
+
+#clean {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 28px;
+    color: #DAC998;
+    border: none;
+    background-color: transparent;
+}
+
+#clean:active {
+    color: #D3BF7F;
+}
+
+#keycount {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 40px;
+    left: 17px;
+    z-index: 5;
+}
+
+#logo img {
+    width: 20px;
+    height: 20px;
+}
+
+#link {
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+}
+
+#link: active {
+    color: black
+}
+
+#link: hover {
+    text-decoration: underline;
+}
+
+#input {
+    display: none;
+}
