@@ -12,6 +12,5 @@ The Enigma machines were a series of electro-mechanical rotor cipher machines de
 ***
 
 Enigma.js this is implementation of Enigma Machine algorithm in javascript
-
-***
+<br/>
 
