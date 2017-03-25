@@ -10,7 +10,7 @@
     <script src="js/cipher.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
   </head>
-  <body onkeydown="form_encrypt(event)" onkeyup="colorSVG(event)">
+  <body>
     <div id="page">
       <div class="headcounter">
         <div class="header"></div>
@@ -1853,11 +1853,11 @@
           </g>
         </svg>
         <div class="answearcont">
-          <div class="answear" onchange="getKeyCode(event)">
+          <div class="answear">
             <p id="keyCode">Key: AAA</p>
             <br\>
             <textarea id="shiprograms" rows="7" disabled>Shirograms: </textarea>
-            <div id="buttClean"><input type="button" id="clean" onclick="clean()" value="CLEAN" onselectstart="return false" onmousedown="return false"></div>
+            <div id="buttClean"><input type="button" id="clean" value="CLEAN" onselectstart="return false" onmousedown="return false"></div>
             <div id="keycount">
               <select id="Key1" name="Key1">
                 <option>A</option>
