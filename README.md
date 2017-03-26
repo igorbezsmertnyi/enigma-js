@@ -3,6 +3,7 @@
 </br>
 Enigma machine algorithm in javascript
 </br>
+
 [Link to Demo](https://igorbezsmertnyi.github.io/enigma-js/)
 
 ## About Enigma Machine
