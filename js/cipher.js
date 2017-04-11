@@ -14,11 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
   let TxEncrypt = new Array()               //Input text value
   let Output = new Array()                  //Output encripted array
   let Encrypt = new Array()                 //Encripted index
-  let arr_alp = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")               //regular aphabet array
-  let rotor_3 = new Array("B", "D", "F", "H", "J", "L", "C", "P", "R", "T", "X", "V", "Z", "N", "Y", "E", "I", "W", "G", "A", "K", "M", "U", "S", "Q", "O")               //first rotor alphabet array
-  let rotor_2 = new Array("A", "J", "D", "K", "S", "I", "R", "U", "X", "B", "L", "H", "W", "T", "M", "C", "Q", "G", "Z", "N", "P", "Y", "F", "V", "O", "E")               //second rotor alphabet array
-  let rotor_1 = new Array("E", "K", "M", "F", "L", "G", "D", "Q", "V", "Z", "N", "T", "O", "W", "Y", "H", "X", "U", "S", "P", "A", "I", "B", "R", "C", "J")               //third rotor alphabet array
-  let reflector = new Array("Y", "R", "U", "H", "Q", "S", "L", "D", "P", "X", "N", "G", "O", "K", "M", "I", "E", "B", "F", "Z", "C", "W", "V", "J", "A", "T")             //reflector alphabet array
+
+
+  //You can customize this arrays however, but if letters count changing donn't forget chenge 26 coefficient
+  //in line 46, 80, 82, 85, 88, 92 - 94, 96 - 103
+  const arr_alp = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")               //regular aphabet array
+  const rotor_3 = new Array("B", "D", "F", "H", "J", "L", "C", "P", "R", "T", "X", "V", "Z", "N", "Y", "E", "I", "W", "G", "A", "K", "M", "U", "S", "Q", "O")               //first rotor alphabet array
+  const rotor_2 = new Array("A", "J", "D", "K", "S", "I", "R", "U", "X", "B", "L", "H", "W", "T", "M", "C", "Q", "G", "Z", "N", "P", "Y", "F", "V", "O", "E")               //second rotor alphabet array
+  const rotor_1 = new Array("E", "K", "M", "F", "L", "G", "D", "Q", "V", "Z", "N", "T", "O", "W", "Y", "H", "X", "U", "S", "P", "A", "I", "B", "R", "C", "J")               //third rotor alphabet array
+  const reflector = new Array("Y", "R", "U", "H", "Q", "S", "L", "D", "P", "X", "N", "G", "O", "K", "M", "I", "E", "B", "F", "Z", "C", "W", "V", "J", "A", "T")             //reflector alphabet array
 
   let answear = document.getElementsByClassName("answear")[0]
   let buttClean = document.getElementById('buttClean')
